@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chain of Charity (Disasters)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-md navbar-dark default-color">
+        <a class="navbar-brand" href="#">Chain of Charity</a><img class="hlogo" src="images/hlogo.jpg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <a class="logo_container" href="#fb"><img class="logo" src="images/fb.png"></a>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <a class="logo_container" href="#ig"><img class="logo" src="images/insta.png"></a>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="dropdown" id="help">
+                        <button class="btn btn-default dropdown-toggle bg-secondary" type="button" data-toggle="dropdown">Account
+                            <span class="caret"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <div class="container">
+        <div class="row">
+
+            <div data-target="#modal" onclick="header_init('Disease')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-heartbeat fa-5x fa-icon-image"></i>
+                        <p class="item-title">
+                            <h3>Disease </h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div data-target="#modal" onclick="header_init('Drought')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-thermometer-full fa-5x fa-icon-image"></i>
+                        <p class="item-title">
+                            <h3> Drought</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div data-target="#modal" onclick="header_init('Earthquake')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-globe fa-5x fa-icon-image"></i>
+                        <p class="item-title">
+                            <h3> Earthquake</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div data-target="#modal" onclick="header_init('Flood')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-tint fa-5x fa-icon-image"></i>
+                        <p class="item-title">
+
+                            <h3> Flood</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div data-target="#modal" onclick="header_init('Hurricane')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-superpowers fa-5x blue fa-icon-image"></i>
+                        <p class="item-title">
+                            <h3>Hurricane</h3>
+                        </p><!-- /.item-title -->
+                    </div>
+                </div>
+            </div>
+            <div data-target="#modal" onclick="header_init('Wildfire')" data-toggle="modal" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-free-code-camp fa-5x fa-icon-image"></i>
+                        <p class="item-title">
+                            <h3> Wildfire</h3>
+                        </p><!-- /.item-title -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
+    <div class="modal fade " id="modal" tabindex="-1" role="dialog" aria-labelledby="Disease_modal" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+            <div class="modal-content" id="modalwindow">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Request_Modal_Header"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="Add-body">
+                    <form id="AddForm">
+                        <div class="form-group">
+                            <label id="title" for="formGroupExampleInput">Date</label>
+                            <input type="date" class="form-control" id="dis_date" placeholder="Location">
+                        </div>
+                        <div class="form-group">
+                            <label id="title" for="formGroupExampleInput">Disaster Location:</label>
+                            <div id="map"></div>
+                            <input type="text" class="form-control" id="dis_loc" placeholder="Location">
+                        </div>
+                        <div class="Item_container">
+
+                        </div>
+                        <div class="plus_container">
+                            <div id="1" class="row">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer" id="Add-footer">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="javascript/script.js"></script>
+< script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABEMmc5ZhkkUDGO6SjyaXk82zVTxye6eQ&callback= myMap">
+    </script>
+
+</html>

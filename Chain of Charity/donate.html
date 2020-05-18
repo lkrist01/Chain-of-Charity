@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Donate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/donate.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" ></script>
+  <script src="javascript/button.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div align=center class="temp">
+<p id="head1">This is the list of the Donations</p>
+<div>
+<div class="container">
+    <div class="row row-flex">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Disaster</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Donate now</th>
+                </tr>
+              </thead>
+              <tbody id="tab">
+                <!--<tr>
+                  <th scope="row" id="d6">1</th>
+                  <td class="m" id="dlist6">Wildfires</td>
+                  <td id="loc6" class="m">nicosia</td>
+                  <td class="m"><button data-target="#donate_modal" data-toggle="modal" type="button data-target="#donate_modal" data-toggle="modal"" class="btn btn-primary"><p>Donate<p></button data-target="#donate_modal" data-toggle="modal"></td>
+                </tr>-->
+              </tbody>
+              </table>
+        </div>
+
+</div>
+<div class="modal fade donate_modal" tabindex="-1" role="dialog" aria-labelledby="Disease_modal" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content" id="modalwindow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Donate_Modal_head">Donation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="Add-body">
+                <form id="AddForm">
+                  <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Donator ID</th>
+                            <th scope="col">Products</th>
+                            <th scope="col">Requests</th>
+                            <th scope="col">Needed</th>
+                            <th scope="col">Donations</th>
+                          </tr>
+                        </thead>
+                        <tbody id="modtab">
+
+
+                          <!--<tr>
+                            <td>1</td>
+                            <td>Water</td>
+                            <td>100</td>
+                            <td>
+                               <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" id="minus" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                       <span class="glyphicon glyphicon-minus" aria-hidden="true">-</span>
+                                    </button>
+                                </span>
+                                  <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                   <span class="input-group-btn">
+                                    <button type="button" id="plus" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                       <span class="glyphicon glyphicon-plus" aria-hidden="true">+</span>
+                                    </button>
+                                  </span>
+                               </div>
+                            </td>
+                          </tr>
+                        -->
+                        </tbody>
+                      </table>
+                  </form>
+            </div>
+            <div class="modal-footer" id="Add-footer">
+              <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Money</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="text" id="money" name="money" class="form-control input-number" value="5" min="1"></td>
+                        <td><button type="button" class=" btn btn-primary">Submit</td>
+                      </tr>
+                    </tbody>>
+              </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body>
+</html>

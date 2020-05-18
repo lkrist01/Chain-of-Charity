@@ -1,0 +1,32 @@
+.container{
+  margin:auto;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+   background-image: url("../images/images.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button{
+    margin: auto;
+    margin-right: 40px;
+    position:relative;
+    top:25%;
+    left:40%;
+}
+
+p{
+  font-family: 'Mali', cursive;
+  font-size: 30px;
+}
